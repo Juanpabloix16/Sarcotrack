@@ -44,10 +44,29 @@
           <option value="otro">Otro</option>
         </select>
 
+        <label for="Ocu">Ocupacion: </label>
+        <input type="text" id="Ocu" name="Ocu" required>
+
+        <label for="Antecedentes">Antecedentes:</label>
+        <input type="text" id="Antecedentes" name="Antecedentes" required>
+
+        <label for="Eps">Eps:</label>
+        <input type="text" id="Eps" name="Eps" required>
+
+        <label for="Observaciones">Observaciones:</label>
+        <input type="text" id="Observaciones" name="Observaciones" required>
+
+        <form action="tu_ruta_de_backend" method="POST" enctype="multipart/form-data">
+          <label for="archivo">Archivos:</label>
+          <input type="file" id="archivo" name="archivo" accept="image/*,application/pdf" required>
+        
+          <button type="submit">Subir</button>
+        </form>
+
         <div class="button-group">
           <button type="submit">Registrar</button>
           <a href="index.html" class="btn-volver">Volver</a>
-      </div>
+        </div>
       </form>
       <div id="userData"></div>
     </section>
